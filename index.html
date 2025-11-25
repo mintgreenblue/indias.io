@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-DGM2G51NDF"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DGM2G51NDF');
+  </script>
+  <title>Indias.io — Discover India</title>
+  <meta name="description" content="Indias.io — a curated showcase of India's culture, places, food and people." />
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Landing header background class */
+    .bg-landing{background-image:url('taj.jpg');background-size:cover;background-position:center;background-repeat:no-repeat;}
+    /* Custom styles */
+    :root{--accent:#E53935;--muted:#6c757d}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;}
+    .hero{
+      min-height:66vh;
+      display:flex;
+      align-items:center;
+      background-size:cover;
+      background-position:center;
+      color: white;
+      position:relative;
+    }
+    .hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45));}
+    .hero .container{position:relative;z-index:2}
+    .feature-card{transition:transform .18s ease, box-shadow .18s ease}
+    .feature-card:hover{transform:translateY(-6px);box-shadow:0 10px 30px rgba(0,0,0,.12)}
+    .gallery img{width:100%;height:200px;object-fit:cover;border-radius:.5rem}
+    footer{background:#0f1720;color:#cbd5e1}
+    .badge-accent{background:var(--accent);color:#fff}
+    @media(min-width:992px){.hero{min-height:74vh}}
+
+    
+
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-dark" href="#">Indias.io</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#discover">Discover</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-3"><a class="btn btn-outline-primary" href="#discover">Explore</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO / LANDING -->
+  <header class="hero text-white bg-landing" role="img" aria-label="Beautiful shot of India">
+    <div class="container text-center text-md-start py-5">
+      <div class="row align-items-center">
+        <div class="col-md-7">
+          <h1 class="display-5 fw-bold">Explore the Heart of India</h1>
+          <p class="lead mb-4">Stories, places and traditions — curated photos and short reads celebrating India’s diversity.</p>
+          <p>
+            <a class="btn btn-lg btn-primary me-2" href="#discover">Start Exploring</a>
+            <a class="btn btn-lg btn-outline-light" href="#contact">Get in Touch</a>
+          </p>
+        </div>
+        <div class="col-md-5 d-none d-md-block">
+          <!-- optional small card or promo -->
+          <div class="card shadow-sm feature-card">
+            <div class="card-body">
+              <h5 class="card-title">Latest: Festivals 2025</h5>
+              <p class="card-text text-muted small">A short guide to must-see festivals across states.</p>
+              <a href="#discover" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <h2>About Indias.io</h2>
+          <p class="text-muted">Indias.io is a lightweight visual showcase built to celebrate India's culture, landscapes and cuisine. This demo site is fully static — drop your images into <code>/images</code> and edit content in this single file.</p>
+          <ul class="list-unstyled">
+            <li class="mb-2"><span class="badge badge-accent rounded-pill me-2">✓</span> Photo-led landing</li>
+            <li class="mb-2"><span class="badge badge-accent rounded-pill me-2">✓</span> Responsive layout (Bootstrap)</li>
+            <li class="mb-2"><span class="badge badge-accent rounded-pill me-2">✓</span> Accessible markup</li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <img src="culture.jpg" alt="People in an Indian market" class="img-fluid rounded shadow-sm">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCOVER / FEATURES -->
+  <section id="discover" class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h3>Discover</h3>
+        <p class="text-muted">Quick links to curated themes.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 feature-card">
+            <img src="place.jpg" class="card-img-top" alt="Famous places">
+            <div class="card-body">
+              <h5 class="card-title">Places</h5>
+              <p class="card-text text-muted">Heritage sites, mountains and hidden gems.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 feature-card">
+            <img src="food.jpg" class="card-img-top" alt="Indian food">
+            <div class="card-body">
+              <h5 class="card-title">Food</h5>
+              <p class="card-text text-muted">Regional flavours, street food and recipes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 feature-card">
+            <img src="holi.jpg" class="card-img-top" alt="People and culture">
+            <div class="card-body">
+              <h5 class="card-title">People & Culture</h5>
+              <p class="card-text text-muted">Festivals, art and everyday life.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h3>Gallery</h3>
+        <p class="text-muted">A selection of photos — replace the images with your own files.</p>
+      </div>
+      <div class="row g-3 gallery">
+        <div class="col-6 col-md-3"><img src="gallery-1.jpg" alt="gallery"></div>
+        <div class="col-6 col-md-3"><img src="gallery-2.jpg" alt="gallery"></div>
+        <div class="col-6 col-md-3"><img src="gallery-3.jpg" alt="gallery"></div>
+        <div class="col-6 col-md-3"><img src="gallery-4.jpg" alt="gallery"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <h3>Contact</h3>
+          <p class="text-muted">Want to collaborate or ask about licensing images? Drop a message.</p>
+          <form id="contactForm" novalidate>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input id="name" class="form-control" required>
+              <div class="invalid-feedback">Please provide your name.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input id="email" type="email" class="form-control" required>
+              <div class="invalid-feedback">Please provide a valid email.</div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" rows="4" class="form-control" required></textarea>
+              <div class="invalid-feedback">Message can't be empty.</div>
+            </div>
+            <button class="btn btn-primary" type="submit">Send</button>
+          </form>
+        </div>
+        <div class="col-lg-6">
+          <div class="p-4 bg-white rounded shadow-sm">
+            <h5>Quick Info</h5>
+            <p class="text-muted mb-1"><strong>Email:</strong> hello@indias.io</p>
+            <p class="text-muted mb-1"><strong>Location:</strong> India</p>
+            <p class="text-muted small">This site is static — to accept contact submissions you can hook the form to a service like Formspree, Netlify Forms, or a simple server endpoint.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-4">
+    <div class="container d-md-flex justify-content-between align-items-center">
+      <div class="mb-3 mb-md-0">
+        <strong>Indias.io</strong>
+        <small class="d-block text-muted">© <span id="year"></span> All rights reserved.</small>
+      </div>
+      <div>
+        <a class="text-decoration-none me-3 text-muted" href="#">Privacy</a>
+        <a class="text-decoration-none text-muted" href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+
+  // Apps Script endpoint (deployed web app URL)
+  const SHEET_ENDPOINT = 'https://script.google.com/macros/s/AKfycbzETg1t4ULQbKQ--eI97z3Q7xlYxt4lU0dHAboIjWYHdmK6-mowYJzKZRAHJJmq2Hvk/exec';
+  const SHEET_SECRET = 'indias1234'; // same secret as in Code.gs
+
+  // populate year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  (function () {
+    var form = document.getElementById('contactForm');
+    form.addEventListener('submit', async function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (!form.checkValidity()) {
+        form.classList.add('was-validated');
+        return;
+      }
+
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var message = document.getElementById('message').value.trim();
+
+      var submitBtn = form.querySelector('button[type="submit"]');
+      var originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending…';
+
+      try {
+        // Post JSON to Apps Script
+        const res = await fetch(SHEET_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            message: message,
+            secret: SHEET_SECRET,
+            origin: location.href,
+            ua: navigator.userAgent
+          })
+        });
+
+        // Apps Script returns JSON text — parse it
+        const data = await res.json();
+
+        if (data && data.ok) {
+          alert('Thank you for your interest :).');
+          form.reset();
+          form.classList.remove('was-validated');
+        } else {
+          alert('Submission failed: ' + (data && data.error ? data.error : 'unknown'));
+        }
+
+      } catch (err) {
+        console.error('Submission error', err);
+        alert('Network error submitting form. Try again later.');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }
+    }, false);
+  })();
+</script>
+
+</body>
+</html>
